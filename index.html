@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作流大升级 - 产品发布会</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 进度指示器 -->
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+    
+    <!-- 页码指示 -->
+    <div class="page-indicator">
+        <span class="current-page">1</span> / <span class="total-pages">0</span>
+    </div>
+
+    <!-- 导航提示 -->
+    <div class="nav-hint">
+        使用 ← → 键或点击屏幕左右两侧翻页
+    </div>
+
+    <!-- 幻灯片容器 -->
+    <div class="slides-container">
+        
+        <!-- 封面页 -->
+        <section class="slide active" data-slide="1">
+            <div class="slide-content cover">
+                <h1 class="main-title">工作流大升级</h1>
+                <p class="subtitle">让自动化从"能用"走向"好用"</p>
+                <div class="cover-info">
+                    <p class="date">2025/10/28</p>
+                    <p class="version">内部产品发布会</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第1部分：目标与背景 -->
+        <section class="slide" data-slide="2">
+            <div class="slide-content">
+                <h2 class="section-title">1️⃣ 本次迭代的目标与业务背景
+                    <button class="view-image-btn" onclick="openImageViewer('./images/本次迭代的目标与业务背景.png')">
+                        📊 查看详细图示
+                    </button>
+                </h2>
+                <div class="content-box">
+                    <h3>业务痛点</h3>
+                    <ul class="pain-points">
+                        <li>
+                            <span class="point-number">1</span>
+                            <div class="point-content">
+                                <strong>接待场景割裂</strong>
+                                <p>原有"小鼓接待"更偏向短流程与个性化回复，难以覆盖标准化、长流程接待场景</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="point-number">2</span>
+                            <div class="point-content">
+                                <strong>自动化回复过于死板</strong>
+                                <p>自动化回复过于死板，无法灵活插入AI和标准话术，影响客户体验一致性</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="point-number">3</span>
+                            <div class="point-content">
+                                <strong>自动化流程生硬</strong>
+                                <p>节点执行为一次性逻辑，缺少对话等待、分阶段接待等真实服务特征</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-slide="3">
+            <div class="slide-content">
+                <h2 class="section-title">本次迭代目标</h2>
+                <div class="goals-grid">
+                    <div class="goal-card">
+                        <div class="goal-icon">🎯</div>
+                        <h3>工作流接待模式</h3>
+                        <p>让 AI 能完成完整、标准化的接待流程</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">🔧</div>
+                        <h3>增加AI节点</h3>
+                        <p>让自动化真正贴合业务逻辑，更灵活、更智能</p>
+                    </div>
+                    <div class="goal-card">
+                        <div class="goal-icon">✨</div>
+                        <h3>优化工作流接待流程</h3>
+                        <p>可灵活复用不同工作流，实现更精细化的流程管理。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第2部分：核心新功能 -->
+        <section class="slide" data-slide="4">
+            <div class="slide-content">
+                <h2 class="section-title">2️⃣ 本次迭代的功能变化</h2>
+                <h3 class="subsection-title">🎯 核心新功能</h3>
+                <div class="feature-overview">
+                    <div class="feature-item">1. 工作流接待模式</div>
+                    <div class="feature-item">2. 全局信息收集</div>
+                    <div class="feature-item">3. 询问消息节点</div>
+                    <div class="feature-item">4. 智能问答节点</div>
+                    <div class="feature-item">5. 等待回复模式</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能1：工作流接待模式 -->
+        <section class="slide" data-slide="5">
+            <div class="slide-content">
+                <h3 class="feature-title">✨ 新增工作流接待模式
+                    <button class="view-image-btn" onclick="openImageViewer('./images/工作流接待模式.png')">
+                        📊 查看详细图示
+                    </button>
+                </h3>
+                <div class="feature-detail">
+                    <div class="comparison-box">
+                        <div class="compare-item">
+                            <h4>小鼓接待</h4>
+                            <p>短流程、个性化问答</p>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="compare-item highlight">
+                            <h4>工作流接待</h4>
+                            <p>长流程、标准化接待</p>
+                        </div>
+                    </div>
+                    <ul class="feature-points">
+                        <li>采用<strong>触发器型流程结构</strong>，将接待拆分为多个阶段</li>
+                        <li>可复用不同阶段工作流，减少重复配置</li>
+                        <li>能针对不同阶段单独优化，更灵活更高效</li>
+                        <li>实现"分层逻辑 + 智能分流"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能2：全局信息收集 -->
+        <section class="slide" data-slide="6">
+            <div class="slide-content">
+                <h3 class="feature-title">✨ 全局信息收集
+                    <button class="view-image-btn" onclick="openImageViewer('./images/全局信息收集节点.png')">
+                        📊 查看详细图示
+                    </button>
+                </h3>
+                <div class="feature-detail">
+                    <div class="highlight-box">
+                        <p class="big-text">全工作流识别顾客对话，自动补全已收集字段</p>
+                    </div>
+                    <ul class="feature-points">
+                        <li>一次配置，全局通用</li>
+                        <li>减少重复配置和信息缺失</li>
+                        <li>自动识别并补全已收集字段</li>
+                        <li>显著降低人工维护成本</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能3：询问消息节点 -->
+        <section class="slide" data-slide="7">
+            <div class="slide-content">
+                <h3 class="feature-title">💬 询问消息节点
+                    <button class="view-image-btn" onclick="openImageViewer('./images/询问消息节点.png')">
+                        📊 查看详细图示
+                    </button>
+                </h3>
+                <div class="feature-detail">
+                    <div class="highlight-box">
+                        <p class="big-text">引入 AI 智能引导提问</p>
+                    </div>
+                    <ul class="feature-points">
+                        <li>与判断节点、全局字段联动，让收集信息更自然</li>
+                        <li>比固定话术更人性化，减少顾客流失</li>
+                        <li>根据上下文动态引导顾客回答</li>
+                        <li>实现对话式信息收集体验</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能4：智能问答节点 -->
+        <section class="slide" data-slide="8">
+            <div class="slide-content">
+                <h3 class="feature-title">💬 智能问答节点
+                    <button class="view-image-btn" onclick="openImageViewer('./images/问答节点.png')">
+                        📊 查看详细图示
+                    </button>
+                </h3>
+                <div class="feature-detail">
+                    <ul class="feature-points">
+                        <li>支持直接调用<strong>知识库文本</strong>，自动回答用户问题</li>
+                        <li>可自定义添加优质问答，精准控制 AI 回复</li>
+                        <li>适用于高频问答场景，显著提升响应效率</li>
+                        <li>支持多知识库引用与文本变量替换</li>
+                        <li>让回答更精准、更自然，更贴近品牌语气</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能5：等待回复模式 -->
+        <section class="slide" data-slide="9">
+            <div class="slide-content">
+                <h3 class="feature-title">⏳ 等待回复模式</h3>
+                <div class="feature-detail">
+                    <div class="mode-options">
+                        <div class="mode-option">立即回复</div>
+                        <div class="mode-option highlight">等待用户回复</div>
+                    </div>
+                    <ul class="feature-points">
+                        <li>对话逻辑更贴近真实客服，避免机械式连续输出</li>
+                        <li>支持超时逻辑和兜底节点，保证流程连贯性</li>
+                        <li>让对话更自然、更人性化</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 功能优化亮点 -->
+        <section class="slide" data-slide="10">
+            <div class="slide-content">
+                <h3 class="subsection-title">🚀 功能优化亮点</h3>
+                <div class="optimization-grid">
+                    <div class="opt-card">
+                        <h4>✨ 知识库全面改版</h4>
+                        <ul>
+                            <li>全新交互界面，信息更集中</li>
+                            <li>支持自建分类与双向关联</li>
+                            <li>不同 AI 可使用不同知识库</li>
+                        </ul>
+                    </div>
+                    <div class="opt-card">
+                        <h4>✨ 消息节点升级</h4>
+                        <ul>
+                            <li>支持多内容块插入</li>
+                            <li>可插入表情与顾客字段</li>
+                            <li>适配抖音渠道留资卡</li>
+                        </ul>
+                    </div>
+                    <div class="opt-card">
+                        <h4>✨ 新增兜底意图</h4>
+                        <ul>
+                            <li>所有意图识别节点可共用</li>
+                            <li>未识别成功时自动触发</li>
+                            <li>减少重复配置</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 其他优化 -->
+        <section class="slide" data-slide="11">
+            <div class="slide-content">
+                <h3 class="subsection-title">🧩 其他优化</h3>
+                <div class="other-improvements">
+                    <div class="improvement-item">
+                        <span class="icon">🖱️</span>
+                        <div>
+                            <strong>新增抓手/指针双模式</strong>
+                            <p>抓手模式拖动画布，指针模式框选节点</p>
+                        </div>
+                    </div>
+                    <div class="improvement-item">
+                        <span class="icon">⚡</span>
+                        <div>
+                            <strong>判断节点支持顾客字段判断</strong>
+                            <p>多条件更灵活</p>
+                        </div>
+                    </div>
+                    <div class="improvement-item">
+                        <span class="icon">⏰</span>
+                        <div>
+                            <strong>延迟节点支持具体时间段</strong>
+                            <p>可选择"第几天"执行</p>
+                        </div>
+                    </div>
+                    <div class="improvement-item">
+                        <span class="icon">🔗</span>
+                        <div>
+                            <strong>优化连接逻辑</strong>
+                            <p>减少断线交叉问题</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第3部分：Demo演示 -->
+        <section class="slide" data-slide="12">
+            <div class="slide-content">
+                <h2 class="section-title">3️⃣ 新功能发布与 Demo</h2>
+                <div class="demo-section">
+                    <h3>📍 演示重点</h3>
+                    <div class="demo-list">
+                        <div class="demo-item">
+                            <span class="demo-number">1</span>
+                            <div>
+                                <strong>工作流接待模式配置逻辑</strong>
+                                <p>与小鼓对比展示</p>
+                            </div>
+                        </div>
+                        <div class="demo-item">
+                            <span class="demo-number">2</span>
+                            <div>
+                                <strong>全局信息收集 + 询问消息节点</strong>
+                                <p>协作效果演示</p>
+                            </div>
+                        </div>
+                        <div class="demo-item">
+                            <span class="demo-number">3</span>
+                            <div>
+                                <strong>智能问答节点</strong>
+                                <p>调用知识库自动回答</p>
+                            </div>
+                        </div>
+                        <div class="demo-item">
+                            <span class="demo-number">4</span>
+                            <div>
+                                <strong>等待回复模式</strong>
+                                <p>自然对话衔接展示</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="demo-goal">
+                        <strong>✅ 演示目标：</strong>看到工作流的效果，并理解配置逻辑
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第4部分：下次迭代计划 -->
+        <section class="slide" data-slide="13">
+            <div class="slide-content">
+                <h2 class="section-title">4️⃣ 下次迭代计划</h2>
+                <div class="future-plan">
+                    <div class="plan-goal">
+                        <h3>目标</h3>
+                        <ul>
+                            <li>让工作流全面支撑私信、评论、渠道接待等多入口应用场景</li>
+                            <li>强化工作流智能推荐与复用能力，让自动化更智能、更省心</li>
+                        </ul>
+                    </div>
+                    <div class="plan-direction">
+                        <h3>规划方向</h3>
+                        <div class="direction-cards">
+                            <div class="direction-card">
+                                <div class="card-number">1</div>
+                                <p>打通工作流与"小来"配置体系，能像优化小鼓一样优化工作流</p>
+                            </div>
+                            <div class="direction-card">
+                                <div class="card-number">2</div>
+                                <p>推出工作流模板中心，降低销售和实施上手难度</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第5部分：Q&A -->
+        <section class="slide" data-slide="14">
+            <div class="slide-content">
+                <h2 class="section-title">5️⃣ Q&A / 互动环节</h2>
+                <div class="qa-section">
+                    <div class="qa-welcome">
+                        <p class="big-text">欢迎销售、客服、实施团队提问</p>
+                    </div>
+                    <div class="qa-focus">
+                        <h3>重点收集</h3>
+                        <ul>
+                            <li>功能理解疑问</li>
+                            <li>典型客户使用反馈</li>
+                            <li>销售侧落地场景建议</li>
+                        </ul>
+                        <p class="qa-note">问题将作为下阶段迭代参考</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结束页 -->
+        <section class="slide" data-slide="15">
+            <div class="slide-content cover">
+                <h1 class="main-title">谢谢大家</h1>
+                <p class="subtitle">让工作流真正成为智能客服体系的核心中枢</p>
+                <div class="end-quote">
+                    <p>模块化 · 可复用 · 可智能判断</p>
+                    <p class="highlight-text">让自动化从"能用"走向"好用"</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 导航按钮 -->
+    <button class="nav-btn prev-btn" aria-label="上一页">‹</button>
+    <button class="nav-btn next-btn" aria-label="下一页">›</button>
+
+    <!-- 图片预览模态框 -->
+    <div id="imageViewerModal" class="image-viewer-modal">
+        <div class="image-viewer-overlay" onclick="closeImageViewer()"></div>
+        <div class="image-viewer-container">
+            <button class="image-viewer-close" onclick="closeImageViewer()" aria-label="关闭">✕</button>
+            <div class="image-viewer-content">
+                <img id="viewerImage" src="" alt="预览图片">
+            </div>
+            <div class="image-viewer-controls">
+                <button onclick="zoomIn()" title="放大">🔍+</button>
+                <button onclick="zoomOut()" title="缩小">🔍-</button>
+                <button onclick="resetZoom()" title="重置">↺</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
